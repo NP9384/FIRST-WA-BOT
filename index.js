@@ -69,9 +69,9 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('DARK NP connected to whatsapp ✅')
 
-let up = `DARK NP Multi device bot connected successful ✅\n\nPREFIX: ${.}`;
+let up = (`DARK NP Multi device bot connected successful ✅')\n\nPREFIX: ${.};
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/6BrBx8B/Screenshot-20240313-205627-Gallery.jpg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https:/i.ibb.co/6BrBx8B/Screenshot-20240313-205627-Gallery.jpg` }, caption: up })
 
 }
 })
