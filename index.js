@@ -69,7 +69,7 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `DQRK NPconnected successful❤️‍🔥☺️ ✅\n\nPREFIX: ${prefix}`;
+let up = `DRRK NPconnected successful❤️‍🔥☺️ ✅\n\nPREFIX:${prefix}`;
 
 conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/2PCxDJ8/IMG1597A.jpg` }, caption: up })
 
