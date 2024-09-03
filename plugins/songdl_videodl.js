@@ -15,19 +15,7 @@ try{
 const search = await yts(q)
 const data = search.videos[0];
 const url = data.url
-
-let desc  =  '
- DARK NP SONG DOWNLOADER
-  
-title: ${data.title}
-description: ${data.description}
-time: ${data.timestamp}
-ago: ${data.ago}
-View: ${data.views}
-
-MADE BY NIPUNA PROMOD
-  '
-await conn.sendMessage(from, {image:{url: data.thumbnail},caption:desc},{quoted:mek});
+await conn.sendMessage(from, {image:{url: data.thumbnail},{quoted:mek});
 // download audio
   let down = await fg.yta(url)
   let downloadUrl = down.dl_url
