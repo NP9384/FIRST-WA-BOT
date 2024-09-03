@@ -15,7 +15,7 @@ try{
 const search = await yts(q)
 const data = search.videos[0];
 // download audio
-  let down = await fg.yta(url)
+  let down = await fg.yts(url)
   let downloadUrl = down.dl_url
   //send audio msg
   await conn. sendMessage(form, {audio:{url:downloadUrl} ,mimetype:"audio/mpge"} ,{quoted:mek});
