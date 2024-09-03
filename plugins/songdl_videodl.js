@@ -19,13 +19,7 @@ const url = data.url
 let desc  =  "
  DARK NP SONG DOWNLOADER'
   
-title: ${data.title}
-description: ${data.description}
-time: ${data.timestamp}
-ago: ${data.ago}
-View: ${data.views}
 
-MADE BY NIPUNA PROMOD
   "
 await conn.sendMessage(from, {image:{url: data.thumbnail},caption:desc},{quoted:mek});
 // download audio
