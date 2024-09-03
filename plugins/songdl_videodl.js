@@ -14,8 +14,6 @@ try{
   if(!q) return reply("Please Give Url in YOUTUBE")
 const search = await yts(q)
 const data = search.videos[0];
-const url = data.url
-await conn.sendMessage(from, {image:{url: data.thumbnail},{quoted:mek});
 // download audio
   let down = await fg.yta(url)
   let downloadUrl = down.dl_url
